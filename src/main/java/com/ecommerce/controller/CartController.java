@@ -5,6 +5,13 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
 import com.ecommerce.dao.ProductDao;
 import com.ecommerce.entity.CartProduct;
 import com.ecommerce.entity.Order;
@@ -47,7 +54,7 @@ public class CartController extends HttpServlet {
             totalPrice = (double)session.getAttribute("total_price");
         }
 
-        if(response.getParameter("product-id") != null){
+        if(request.getParameter("product-id") != null){
             productId = Integer.parseInt(request.getParameter("product-id"));
             Product product = productDao.getProduct(productId);
 
