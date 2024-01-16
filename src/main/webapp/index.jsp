@@ -5,12 +5,12 @@
             <!DOCTYPE html>
             <html lang="en">
 
-            <jsp:include page="templates/head.jsp" />
+            <jsp:include page="/templates/head.jsp" />
 
             <body>
                 <div class="site-wrap">
 
-                    <jsp:include page="templates/header.jsp" />
+                    <jsp:include page="/templates/header.jsp" />
 
                     <div class="site-blocks-cover" style="background-image: url(static/images/hero_1.jpg);"
                         data-aos="fade">

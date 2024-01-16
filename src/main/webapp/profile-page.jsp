@@ -39,7 +39,8 @@
                                                                 style="width: 15em; height: 15em; border-radius: 50%;">
                                                         </c:if>
                                                         <c:if test="${account.base64Image == null}">
-                                                            <img class="icon" src="../static/images/blank_avatar.png"
+                                                            <img class="icon"
+                                                                src="${pageContext.request.contextPath}/static/images/blank_avatar.png"
                                                                 id="blah" data-toggle="dropdown" alt="image"
                                                                 style="width: 15em; height: 15em; border-radius: 50%;">
                                                         </c:if>
